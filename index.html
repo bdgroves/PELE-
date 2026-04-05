@@ -229,7 +229,7 @@ a:hover { color:var(--lava-yellow); border-bottom-color:var(--lava-yellow); }
     <div class="card">
       <div class="card-header"><span class="card-title">Kīlauea Summit Livestream</span><span class="card-badge badge-live">LIVE</span></div>
       <div class="card-body" style="padding:0">
-        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/live_stream?channel=UCSO5mfBqOBbTMLCqWYHDNPg&autoplay=0&mute=1" allowfullscreen allow="autoplay;encrypted-media" loading="lazy"></iframe></div>
+        <div class="yt-embed"><iframe src="https://www.youtube.com/embed/tk0tfYDxrUA?autoplay=0&mute=1" allowfullscreen allow="autoplay;encrypted-media" loading="lazy" title="V1cam Kīlauea Livestream"></iframe></div>
       </div>
       <a class="webcam-link" href="https://www.youtube.com/@usgs/streams" target="_blank" rel="noopener">Open USGS YouTube Livestreams ↗</a>
     </div>
@@ -261,29 +261,17 @@ a:hover { color:var(--lava-yellow); border-bottom-color:var(--lava-yellow); }
 
 <!-- ============ WEBCAMS ============ -->
 <div class="tab-panel" id="panel-webcams">
-  <h2 class="section-header"><span class="glow">Kīlauea</span> Summit Livestreams</h2>
-  <p style="font-size:.75rem;color:var(--ash-gray);margin-bottom:1rem;font-family:var(--font-mono)">Three USGS/HVO cameras livestream 24/7 via YouTube. Night views show incandescence from active vents. During fountaining episodes, these are the best seats in the house.</p>
+  <h2 class="section-header"><span class="glow">Kīlauea</span> Summit Livestream</h2>
+  <p style="font-size:.75rem;color:var(--ash-gray);margin-bottom:1rem;font-family:var(--font-mono)">V1cam streams 24/7 via YouTube from the NW rim of Halema'uma'u. During fountaining episodes, this is the best seat in the house.</p>
 
-  <div class="grid-3" style="margin-bottom:1.5rem">
-    <div class="card">
-      <div class="card-header"><span class="card-title">V1cam — West</span><span class="card-badge badge-live">LIVE</span></div>
-      <div class="card-body" style="padding:0"><div class="yt-embed"><iframe src="https://www.youtube.com/embed/live_stream?channel=UCSO5mfBqOBbTMLCqWYHDNPg&autoplay=0&mute=1" allowfullscreen allow="autoplay;encrypted-media" loading="lazy" title="V1cam Livestream"></iframe></div></div>
-      <a class="webcam-link" href="https://www.usgs.gov/volcanoes/kilauea/v1cam-kilauea-volcano-hawaii-west-halemaumau-crater" target="_blank" rel="noopener">NW rim of Halema'uma'u · PTZ · View on USGS ↗</a>
-    </div>
-    <div class="card">
-      <div class="card-header"><span class="card-title">V2cam — East</span><span class="card-badge badge-live">LIVE</span></div>
-      <div class="card-body" style="padding:0"><div class="yt-embed"><iframe src="https://www.youtube.com/embed/live_stream?channel=UCSO5mfBqOBbTMLCqWYHDNPg&autoplay=0&mute=1" allowfullscreen allow="autoplay;encrypted-media" loading="lazy" title="V2cam Livestream"></iframe></div></div>
-      <a class="webcam-link" href="https://www.usgs.gov/media/webcams/v2cam-kilauea-volcano-hawaii-east-halemaumau-crater" target="_blank" rel="noopener">NE rim of caldera · PTZ · View on USGS ↗</a>
-    </div>
-    <div class="card">
-      <div class="card-header"><span class="card-title">V3cam — South</span><span class="card-badge badge-live">LIVE</span></div>
-      <div class="card-body" style="padding:0"><div class="yt-embed"><iframe src="https://www.youtube.com/embed/live_stream?channel=UCSO5mfBqOBbTMLCqWYHDNPg&autoplay=0&mute=1" allowfullscreen allow="autoplay;encrypted-media" loading="lazy" title="V3cam Livestream"></iframe></div></div>
-      <a class="webcam-link" href="https://www.usgs.gov/media/webcams/v3cam-kilauea-volcano-hawaii-south-halemaumau-crater" target="_blank" rel="noopener">South rim · Replaced after ep.38 destroyed original · View on USGS ↗</a>
-    </div>
+  <div class="card" style="margin-bottom:1.5rem">
+    <div class="card-header"><span class="card-title">V1cam — West Halema'uma'u Livestream</span><span class="card-badge badge-live">LIVE</span></div>
+    <div class="card-body" style="padding:0"><div class="yt-embed"><iframe src="https://www.youtube.com/embed/tk0tfYDxrUA?autoplay=0&mute=1" allowfullscreen allow="autoplay;encrypted-media" loading="lazy" title="V1cam Kīlauea Livestream"></iframe></div></div>
+    <a class="webcam-link" href="https://www.youtube.com/@usgs/streams" target="_blank" rel="noopener">All USGS Livestreams (V1, V2, V3) on YouTube ↗</a>
   </div>
 
-  <h2 class="section-header"><span class="glow">Kīlauea</span> Static Webcams</h2>
-  <p style="font-size:.75rem;color:var(--ash-gray);margin-bottom:1rem;font-family:var(--font-mono)">These cameras capture snapshots every few minutes. Click to view the latest image and 24-hour animated GIF on USGS.gov.</p>
+  <h2 class="section-header"><span class="glow">Kīlauea</span> Summit Webcams — Latest Images</h2>
+  <p style="font-size:.75rem;color:var(--ash-gray);margin-bottom:1rem;font-family:var(--font-mono)">Live snapshots updated every few minutes. Images from USGS/HVO — public domain. Click any image for the 24-hour animated GIF.</p>
   <div class="grid-3" id="webcamGrid"></div>
 
   <h2 class="section-header" style="margin-top:2rem"><span class="glow">Mauna Loa</span> Webcams</h2>
@@ -574,17 +562,20 @@ async function loadNotices() {
 
 // --- WEBCAMS ---
 const kilCams = [
-  {id:'KWcam',name:'West Rim Panorama',desc:'Looking SE toward crater',url:'https://www.usgs.gov/volcanoes/kilauea/kwcam-live-panorama-halemaumau-west-rim-kilauea-summit-caldera-looking-southeast'},
-  {id:'F1cam',name:'Thermal (FLIR)',desc:'Heat imaging — sees through vog',url:'https://www.usgs.gov/volcanoes/kilauea/summit-webcams'},
-  {id:'B1cam',name:'Down-dropped Block',desc:'East rim caldera view',url:'https://www.usgs.gov/volcanoes/kilauea/summit-webcams'},
-  {id:'K2cam',name:'Uēkahuna Bluff',desc:'Overlooking caldera, PTZ',url:'https://www.usgs.gov/volcanoes/kilauea/summit-webcams'},
-  {id:'S2cam',name:'South Rim (Eruptive)',desc:'Dec 2024 vent view',url:'https://www.usgs.gov/observatories/hvo/s2cam-halemaumau-crater-summit-kilauea'},
-  {id:'KPcam',name:'Mauna Loa Strip Rd',desc:'Summit plume view',url:'https://www.usgs.gov/volcanoes/kilauea/summit-webcams'},
+  {id:'V1cam',name:"West Halema'uma'u",desc:'NW rim, PTZ livestream',img:'https://volcanoes.usgs.gov/observatories/hvo/cams/V1cam/images/M.jpg',gif:'https://volcanoes.usgs.gov/observatories/hvo/cams/V1cam/images/V1cam.gif',url:'https://www.usgs.gov/volcanoes/kilauea/v1cam-kilauea-volcano-hawaii-west-halemaumau-crater'},
+  {id:'V2cam',name:"East Halema'uma'u",desc:'NE rim of caldera, PTZ',img:'https://volcanoes.usgs.gov/observatories/hvo/cams/V2cam/images/M.jpg',gif:'https://volcanoes.usgs.gov/observatories/hvo/cams/V2cam/images/V2cam.gif',url:'https://www.usgs.gov/media/webcams/v2cam-kilauea-volcano-hawaii-east-halemaumau-crater'},
+  {id:'V3cam',name:"South Halema'uma'u",desc:'South rim, PTZ',img:'https://volcanoes.usgs.gov/observatories/hvo/cams/V3cam/images/M.jpg',gif:'https://volcanoes.usgs.gov/observatories/hvo/cams/V3cam/images/V3cam.gif',url:'https://www.usgs.gov/media/webcams/v3cam-kilauea-volcano-hawaii-south-halemaumau-crater'},
+  {id:'KWcam',name:'West Rim Panorama',desc:'Looking SE toward crater',img:'https://volcanoes.usgs.gov/observatories/hvo/cams/KWcam/images/M.jpg',gif:'https://volcanoes.usgs.gov/observatories/hvo/cams/KWcam/images/KWcam.gif',url:'https://www.usgs.gov/volcanoes/kilauea/kwcam-live-panorama-halemaumau-west-rim-kilauea-summit-caldera-looking-southeast'},
+  {id:'F1cam',name:'Thermal (FLIR)',desc:'Heat imaging — sees through vog',img:'https://volcanoes.usgs.gov/observatories/hvo/cams/F1cam/images/M.jpg',gif:'https://volcanoes.usgs.gov/observatories/hvo/cams/F1cam/images/F1cam.gif',url:'https://www.usgs.gov/volcanoes/kilauea/summit-webcams'},
+  {id:'B1cam',name:'Down-dropped Block',desc:'East rim caldera view',img:'https://volcanoes.usgs.gov/observatories/hvo/cams/B1cam/images/M.jpg',gif:'https://volcanoes.usgs.gov/observatories/hvo/cams/B1cam/images/B1cam.gif',url:'https://www.usgs.gov/volcanoes/kilauea/summit-webcams'},
+  {id:'K2cam',name:'Uēkahuna Bluff',desc:'Overlooking caldera, PTZ',img:'https://volcanoes.usgs.gov/observatories/hvo/cams/K2cam/images/M.jpg',gif:'https://volcanoes.usgs.gov/observatories/hvo/cams/K2cam/images/K2cam.gif',url:'https://www.usgs.gov/volcanoes/kilauea/summit-webcams'},
+  {id:'S2cam',name:'South Rim (Eruptive)',desc:'Dec 2024 vent view',img:'https://volcanoes.usgs.gov/observatories/hvo/cams/S2cam/images/M.jpg',gif:'https://volcanoes.usgs.gov/observatories/hvo/cams/S2cam/images/S2cam.gif',url:'https://www.usgs.gov/observatories/hvo/s2cam-halemaumau-crater-summit-kilauea'},
+  {id:'KPcam',name:'Mauna Loa Strip Rd',desc:'Summit plume view',img:'https://volcanoes.usgs.gov/observatories/hvo/cams/KPcam/images/M.jpg',gif:'https://volcanoes.usgs.gov/observatories/hvo/cams/KPcam/images/KPcam.gif',url:'https://www.usgs.gov/volcanoes/kilauea/summit-webcams'},
 ];
 const mlCams = [
-  {id:'MOcam',name:"Moku'āweoweo Caldera",desc:'South rim',url:'https://www.usgs.gov/volcanoes/mauna-loa/webcams'},
-  {id:'MLcam',name:'Caldera NW Rim',desc:'Northwest view',url:'https://www.usgs.gov/volcanoes/mauna-loa/webcams'},
-  {id:'MKcam',name:'From Mauna Kea',desc:'Summit & NE Rift Zone',url:'https://www.usgs.gov/volcanoes/mauna-loa/webcams'},
+  {id:'MOcam',name:"Moku'āweoweo Caldera",desc:'South rim',img:'https://volcanoes.usgs.gov/observatories/hvo/cams/MOcam/images/M.jpg',gif:'https://volcanoes.usgs.gov/observatories/hvo/cams/MOcam/images/MOcam.gif',url:'https://www.usgs.gov/volcanoes/mauna-loa/webcams'},
+  {id:'MLcam',name:'Caldera NW Rim',desc:'Northwest view',img:'https://volcanoes.usgs.gov/observatories/hvo/cams/MLcam/images/M.jpg',gif:'https://volcanoes.usgs.gov/observatories/hvo/cams/MLcam/images/MLcam.gif',url:'https://www.usgs.gov/volcanoes/mauna-loa/webcams'},
+  {id:'MKcam',name:'From Mauna Kea',desc:'Summit & NE Rift Zone',img:'https://volcanoes.usgs.gov/observatories/hvo/cams/MKcam/images/M.jpg',gif:'https://volcanoes.usgs.gov/observatories/hvo/cams/MKcam/images/MKcam.gif',url:'https://www.usgs.gov/volcanoes/mauna-loa/webcams'},
 ];
 
 function buildCams(cams, id) {
@@ -592,16 +583,19 @@ function buildCams(cams, id) {
     <div class="card">
       <div class="card-header"><span class="card-title">${c.id}</span><span class="card-badge badge-live">LIVE</span></div>
       <div class="card-body" style="padding:0">
-        <div class="webcam-container">
-          <div class="webcam-placeholder">
-            <div class="cam-icon">📷</div>
-            <div>${c.name}</div>
-            <div style="font-size:.6rem;opacity:.6">${c.desc}</div>
-            <div style="font-size:.55rem;opacity:.3;margin-top:.3rem">Click below for live view on USGS</div>
+        <a href="${c.gif}" target="_blank" rel="noopener" style="border:none">
+          <div class="webcam-container">
+            <img src="${c.img}" alt="${c.name}" onload="this.classList.add('loaded')" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="webcam-placeholder" style="display:none">
+              <div class="cam-icon">📷</div>
+              <div>${c.name}</div>
+              <div style="font-size:.6rem;opacity:.6">Image unavailable</div>
+            </div>
+            <div class="cam-label"><span class="cam-id">${c.id}</span><span>${c.desc}</span></div>
           </div>
-        </div>
+        </a>
       </div>
-      <a class="webcam-link" href="${c.url}" target="_blank" rel="noopener">${c.id} — View Live on USGS.gov ↗</a>
+      <a class="webcam-link" href="${c.url}" target="_blank" rel="noopener">${c.name} · View on USGS.gov ↗</a>
     </div>
   `).join('');
 }
