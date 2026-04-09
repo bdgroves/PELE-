@@ -1,11 +1,11 @@
 {
-  "generated": "2026-04-09T19:34:18.359280+00:00",
-  "generated_hst": "2026-04-09 09:34 HST",
+  "generated": "2026-04-09T19:39:01.948058+00:00",
+  "generated_hst": "2026-04-09 09:39 HST",
   "summary": {
     "total": 120,
     "largest_mag": 3.97,
-    "avg_depth_km": 25.3,
-    "m2_plus": 17,
+    "avg_depth_km": 25.4,
+    "m2_plus": 16,
     "m3_plus": 1,
     "period_start": "2026-04-02",
     "period_end": "2026-04-09"
@@ -22,12 +22,12 @@
       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/hv74934262"
     },
     {
-      "mag": 2.15,
-      "place": "12 km S of Fern Forest, Hawaii",
-      "time": 1775688075150,
-      "depth": 1.02999997138977,
-      "lat": 19.3538341522217,
-      "lon": -155.131164550781,
+      "mag": 1.52,
+      "place": "14 km S of Fern Forest, Hawaii",
+      "time": 1775688074990,
+      "depth": 6.4,
+      "lat": 19.3395,
+      "lon": -155.115,
       "type": "earthquake",
       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/hv74934247"
     },
