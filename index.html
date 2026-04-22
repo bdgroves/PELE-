@@ -221,7 +221,7 @@ a:hover { color:var(--lava-yellow); border-bottom-color:var(--lava-yellow); }
 
   <div class="grid-4 fade-in" style="animation-delay:.1s">
     <div class="card"><div class="card-header"><span class="card-title">Kīlauea Alert</span><span class="card-badge badge-watch" id="kilBadge">WATCH</span></div><div class="card-body"><div class="stat-value glow" id="kilAlertVal">WATCH</div><div class="stat-detail" id="kilColorCode">Aviation: ORANGE</div></div></div>
-    <div class="card"><div class="card-header"><span class="card-title">Eruption Episode</span><span class="card-badge badge-live">ACTIVE</span></div><div class="card-body"><div class="stat-value glow">44</div><div class="stat-detail">Episodic fountaining since Dec 2024</div></div></div>
+    <div class="card"><div class="card-header"><span class="card-title">Eruption Episode</span><span class="card-badge badge-live">ACTIVE</span></div><div class="card-body"><div class="stat-value glow" id="episodeNum">45</div><div class="stat-detail" id="episodeDetail">Precursory activity began Apr 21</div></div></div>
     <div class="card"><div class="card-header"><span class="card-title">Earthquakes (7d)</span></div><div class="card-body"><div class="stat-value" id="eqTotalOverview">—</div><div class="stat-detail">within 100 km of summit</div></div></div>
     <div class="card"><div class="card-header"><span class="card-title">Largest Quake</span></div><div class="card-body"><div class="stat-value glow" id="eqLargestOverview">—</div><div class="stat-detail" id="eqLargestPlace">—</div></div></div>
   </div>
@@ -325,11 +325,11 @@ a:hover { color:var(--lava-yellow); border-bottom-color:var(--lava-yellow); }
         <div style="font-family:var(--font-mono);font-size:.7rem;display:grid;gap:.8rem">
           <div><span style="color:var(--lava-yellow)">📈 RAMP UP (Inflation)</span> — Magma filling the shallow reservoir. Ground swells outward. Tilt climbs steadily over days/weeks. This is the pause between episodes. When you see ~20-25+ μrad accumulated, an episode is approaching.</div>
           <div><span style="color:var(--lava-glow)">🔥 PRECURSORY OVERFLOWS</span> — Lava spills from the vents as the magma column pushes to the surface. Small dome fountains and spattering. The pot is starting to boil over. Overflows can pause during brief deflation events, then resume when inflation returns.</div>
-          <div><span style="color:var(--lava-hot)">⬇️ CLIFF (Deflation)</span> — The fountaining episode begins. Rapid tilt drop as the reservoir empties through the vents. This happens fast — ep. 43 recorded 33.9 μrad of deflation in ~9 hours. South vent fountains reached 1,770 ft (record for this eruption).</div>
+          <div><span style="color:var(--lava-hot)">⬇️ CLIFF (Deflation)</span> — The fountaining episode begins. Rapid tilt drop as the reservoir empties through the vents. This happens fast — ep. 43 recorded 33.9 μrad of deflation in ~9 hours. South vent fountains reached 1,770 ft (record through ep. 43).</div>
           <div><span style="color:var(--alert-normal)">🔄 IMMEDIATE REBOUND</span> — Episode ends abruptly. Inflation restarts immediately as new magma refills from below. The cycle begins again.</div>
         </div>
       </div>
-      <p>The sawtooth pattern in the tilt record since December 2024 shows every single episode — 43 ramps and 43 cliffs. It's the heartbeat of the eruption. As the pauses have lengthened (from days to 3+ weeks), the ramps get taller before each cliff. HVO uses the inflation rate and accumulated tilt to forecast the next episode window.</p>
+      <p>The sawtooth pattern in the tilt record since December 2024 shows every single episode since December 2024 — each ramp and cliff marking a pause and fountain cycle. The heartbeat of the eruption. As pauses have lengthened (from days to weeks), the ramps grow taller before each cliff. HVO uses inflation rate and accumulated tilt to forecast the next episode window.</p>
     </div>
   </div>
 
@@ -358,7 +358,7 @@ a:hover { color:var(--lava-yellow); border-bottom-color:var(--lava-yellow); }
     <div class="card">
       <div class="card-header"><span class="card-title">Full Eruption Tilt Record (Dec 2024–Present)</span></div>
       <div class="card-body">
-        <div style="font-size:.8rem;line-height:1.6;margin-bottom:.8rem">The entire sawtooth — every episode since the eruption began. 43+ ramps and cliffs. This is the plot that tells the whole story. Also includes the crater floor laser rangefinder showing the lava level rising with each episode.</div>
+        <div style="font-size:.8rem;line-height:1.6;margin-bottom:.8rem">The entire sawtooth — every episode since the eruption began. Every ramp and cliff since December 2024. This is the plot that tells the whole story. Also includes the crater floor laser rangefinder showing the lava level rising with each episode.</div>
         <a href="https://www.usgs.gov/volcanoes/kilauea/science/eruption-information" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:.8rem;font-weight:600">📊 Open Eruption Information on USGS.gov ↗</a>
       </div>
     </div>
@@ -379,8 +379,16 @@ a:hover { color:var(--lava-yellow); border-bottom-color:var(--lava-yellow); }
     <div class="card-header"><span class="card-title">Latest Messages</span><span class="card-badge badge-live">LIVE</span></div>
     <div class="card-body">
       <div class="notice-card" style="border-left-color:var(--lava-glow)">
+        <div class="notice-date">April 21, 2026 · HVO Daily Update</div>
+        <div class="notice-text">Precursory activity for Episode 45 began overnight — lava flowing from the north vent in Halemaʻumaʻu. Alert Level raised to WATCH / ORANGE. Summit inflation has continued since Episode 44 ended April 9. Episode 45 forecast window: April 19–26.</div>
+      </div>
+      <div class="notice-card">
+        <div class="notice-date">April 9, 2026 · Episode 44 Recap</div>
+        <div class="notice-text">Episode 44 began 11:10 AM HST, ended 7:41 PM after 8.5 hours. North vent fountains reached 800 ft. Tephra fell into park public areas and surrounding communities. Park temporarily closed. Episode 44 was smaller than episodes 41–43.</div>
+      </div>
+      <div class="notice-card">
         <div class="notice-date">April 8, 2026 · 8:21 AM HST</div>
-        <div class="notice-text">Summit inflation returned yesterday afternoon, then south vent overflows and spattering resumed early this morning. Fresh lava flow from south vent at 3:20 a.m., another brief overflow around 6:30 a.m. — first overflows since Monday. Forecast window for ep. 44 is now through April 15.</div>
+        <div class="notice-text">Summit inflation returned yesterday afternoon, then south vent overflows and spattering resumed early this morning. Fresh lava flow from south vent at 3:20 a.m., another brief overflow around 6:30 a.m.</div>
       </div>
       <div class="notice-card">
         <div class="notice-date">April 6, 2026 · AM HST</div>
@@ -502,7 +510,8 @@ a:hover { color:var(--lava-yellow); border-bottom-color:var(--lava-yellow); }
   <h2 class="section-header">Kīlauea Episodic <span class="glow">Fountaining</span> Log</h2>
   <p style="font-size:.75rem;color:var(--ash-gray);margin-bottom:1.2rem;line-height:1.6">Since December 23, 2024, Kīlauea has erupted in a distinctive episodic pattern — short-lived lava fountaining from two vents in Halema'uma'u, separated by inflationary pauses. This style was last seen in the 1980s.</p>
   <div class="timeline">
-    <div class="timeline-item"><div class="ep-title">Episode 44 — Precursory</div><div class="ep-date">April 3, 2026 – present</div><div class="ep-desc">South vent overflows began April 3. Brief deflation April 5–7 (triggered by 74-earthquake swarm) delayed onset. Inflation returned April 7, overflows resumed April 8. Forecast window extended through April 15.</div></div>
+    <div class="timeline-item"><div class="ep-title">Episode 45 — Precursory</div><div class="ep-date">April 21, 2026 – present</div><div class="ep-desc">Precursory lava flows from the north vent began overnight April 20–21. Alert Level raised to WATCH / ORANGE. Summit inflation ongoing since end of episode 44. Episode 45 forecast window: April 19–26.</div></div>
+    <div class="timeline-item"><div class="ep-title">Episode 44 — Complete</div><div class="ep-date">April 9, 2026 · 8.5 hours</div><div class="ep-desc">Began 11:10 AM HST, ended 7:41 PM. North vent fountains reached 800 ft (240m). Tephra fell into public areas of the park and surrounding communities — softball-sized chunks near Kilauea Military Camp. Park closed during episode. South vent did not fountain. About 7.5M cubic yards of lava covered half the crater floor. Smaller than episodes 41–43.</div></div>
     <div class="timeline-item"><div class="ep-title">Episode 43</div><div class="ep-date">March 10, 2026 — ~9 hours</div><div class="ep-desc">Record-breaking episode. South vent fountain reached 1,770 ft (540 m) — tallest of the eruption. North vent peaked above 1,300 ft. UWD tiltmeter recorded 33.9 μrad of deflation. Tephra fall blanketed Volcano Village, Highway 11, and reached Hilo. Park and highway temporarily closed.</div></div>
     <div class="timeline-item"><div class="ep-title">Episode 42</div><div class="ep-date">February 15, 2026</div><div class="ep-desc">North vent fountain reached ~300 m (~1,000 ft). Helicopter overflight Feb 26 mapped crater floor changes.</div></div>
     <div class="timeline-item"><div class="ep-title">Episode 41</div><div class="ep-date">January 2026</div><div class="ep-desc">Fountains from both vents reached 500–650 ft (150–200 m). Tephra fall reported in park, Volcano Village, and Highway 11.</div></div>
@@ -660,6 +669,10 @@ async function loadAlerts() {
       });
     }
     document.getElementById('dataAge').textContent = data.generated_hst || '';
+    // Update episode number if provided in JSON
+    if (data.kilauea_episode) {
+      document.getElementById('episodeNum').textContent = data.kilauea_episode;
+    }
   } catch {
     // Static data not available, defaults are fine
     document.getElementById('dataAge').textContent = 'Live (no cached data)';
@@ -692,10 +705,10 @@ async function loadNotices() {
   } else {
     container.innerHTML = `
       <div class="notice-card">
-        <div class="notice-text">Check <a href="https://www.usgs.gov/volcanoes/kilauea/volcano-updates" target="_blank" rel="noopener">HVO daily updates</a> for the latest Kīlauea status. Episode 44 forecast window now through April 15. Overflows resumed April 8 after brief deflation.</div>
+        <div class="notice-text">Check <a href="https://www.usgs.gov/volcanoes/kilauea/volcano-updates" target="_blank" rel="noopener">HVO daily updates</a> for the latest Kīlauea status.</div>
       </div>
     `;
-    document.getElementById('alertText').innerHTML = '<strong>Episode 44</strong> forecast window now through April 15 · Overflows resumed after brief deflation · Aviation: <strong>ORANGE</strong>';
+    document.getElementById('alertText').innerHTML = '<strong>Episode 45</strong> precursory activity began Apr 21 · Episode 44 complete Apr 9 (800 ft fountains) · Aviation: <strong>ORANGE</strong>';
   }
 }
 
