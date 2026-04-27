@@ -1,11 +1,11 @@
 {
-  "generated": "2026-04-27T18:20:21.319864+00:00",
-  "generated_hst": "2026-04-27 08:20 HST",
+  "generated": "2026-04-27T20:18:44.239614+00:00",
+  "generated_hst": "2026-04-27 10:18 HST",
   "summary": {
-    "total": 144,
+    "total": 143,
     "largest_mag": 3.12,
-    "avg_depth_km": 17.2,
-    "m2_plus": 28,
+    "avg_depth_km": 17.3,
+    "m2_plus": 26,
     "m3_plus": 1,
     "period_start": "2026-04-20",
     "period_end": "2026-04-27"
@@ -52,12 +52,12 @@
       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/hv74945372"
     },
     {
-      "mag": 2.07,
+      "mag": 1.78,
       "place": "6 km SW of Volcano, Hawaii",
-      "time": 1777218377680,
-      "depth": 0.439999997615814,
-      "lat": 19.4056663513184,
-      "lon": -155.281997680664,
+      "time": 1777218377720,
+      "depth": 0.74,
+      "lat": 19.4046666666667,
+      "lon": -155.280833333333,
       "type": "earthquake",
       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/hv74945302"
     },
@@ -122,12 +122,12 @@
       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/hv74945122"
     },
     {
-      "mag": 1.98,
+      "mag": 1.66,
       "place": "6 km SW of Volcano, Hawaii",
-      "time": 1777195064670,
-      "depth": 0.170000001788139,
-      "lat": 19.4071674346924,
-      "lon": -155.283340454102,
+      "time": 1777195064780,
+      "depth": 0.66,
+      "lat": 19.4048333333333,
+      "lon": -155.281166666667,
       "type": "earthquake",
       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/hv74945092"
     },
@@ -1210,16 +1210,6 @@
       "lon": -155.448333333333,
       "type": "earthquake",
       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/hv74940247"
-    },
-    {
-      "mag": 2.19,
-      "place": "5 km SW of Volcano, Hawaii",
-      "time": 1776735340770,
-      "depth": -0.689999997615814,
-      "lat": 19.400333404541,
-      "lon": -155.268325805664,
-      "type": "earthquake",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/hv74940192"
     },
     {
       "mag": 1.62,
